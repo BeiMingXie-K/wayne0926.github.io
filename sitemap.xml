@@ -247,13 +247,6 @@
   </url>
   
   <url>
-    <loc>https://www.wr0926.ml/download/file/ditto/index.html</loc>
-    
-    <lastmod>2020-07-25</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://www.wr0926.ml/download/file/anydo/index.html</loc>
     
     <lastmod>2020-07-25</lastmod>
@@ -261,14 +254,21 @@
   </url>
   
   <url>
-    <loc>https://www.wr0926.ml/download/file/lx-music/index.html</loc>
+    <loc>https://www.wr0926.ml/download/file/fastcopy/index.html</loc>
     
     <lastmod>2020-07-25</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.wr0926.ml/download/file/fastcopy/index.html</loc>
+    <loc>https://www.wr0926.ml/download/file/ditto/index.html</loc>
+    
+    <lastmod>2020-07-25</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.wr0926.ml/download/file/lx-music/index.html</loc>
     
     <lastmod>2020-07-25</lastmod>
     
@@ -312,13 +312,6 @@
   </url>
   
   <url>
-    <loc>https://www.wr0926.ml/tags/butterfly/</loc>
-    <lastmod>2020-08-18</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.wr0926.ml/tags/%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2020-08-18</lastmod>
     <changefreq>daily</changefreq>
@@ -327,6 +320,13 @@
   
   <url>
     <loc>https://www.wr0926.ml/tags/cnzz/</loc>
+    <lastmod>2020-08-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wr0926.ml/tags/butterfly/</loc>
     <lastmod>2020-08-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -382,13 +382,6 @@
   </url>
   
   <url>
-    <loc>https://www.wr0926.ml/tags/%E7%AC%94%E8%AE%B0/</loc>
-    <lastmod>2020-08-18</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.wr0926.ml/tags/github-page/</loc>
     <lastmod>2020-08-18</lastmod>
     <changefreq>daily</changefreq>
@@ -404,6 +397,13 @@
   
   <url>
     <loc>https://www.wr0926.ml/tags/%E9%98%BF%E9%87%8C/</loc>
+    <lastmod>2020-08-18</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wr0926.ml/tags/%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2020-08-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -440,14 +440,14 @@
 
   
   <url>
-    <loc>https://www.wr0926.ml/categories/%E6%95%99%E7%A8%8B/</loc>
+    <loc>https://www.wr0926.ml/categories/%E8%AF%B4%E6%98%8E/</loc>
     <lastmod>2020-08-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://www.wr0926.ml/categories/%E8%AF%B4%E6%98%8E/</loc>
+    <loc>https://www.wr0926.ml/categories/%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2020-08-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
