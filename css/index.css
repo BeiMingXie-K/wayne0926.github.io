@@ -5795,7 +5795,3 @@ blockquote.pullquote.right {
 ::-webkit-scrollbar-corner {
   background-color: transparent;
 }
-::-moz-selection {
-  color: #fff;
-  background-color: #49b1f5;
-}
