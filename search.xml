@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Hexo Butterfly主题页面特效</title>
+      <link href="/p/cb7b45b6/"/>
+      <url>/p/cb7b45b6/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><blockquote><p><a href="https://api.vvhan.com/"><strong>韩小韩API接口站</strong></a></p></blockquote><blockquote><p> <a href="https://blog.lete114.top/"><strong>Lete乐特 ‘s Blog</strong></a></p></blockquote><p><strong>源码(API)出处  ↑</strong></p><h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><h2 id="冒泡特效"><a href="#冒泡特效" class="headerlink" title="冒泡特效"></a>冒泡特效</h2><p><img src= "/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/maopao.jpg" alt="冒泡"></p><p><strong><em>找个<code>JS</code>文件粘贴进去就行了</em></strong>（简单粗暴，但是要在主题配置里确定引用了的）  ↓ </p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 气泡</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">qipao</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    $(<span class="string">&#x27;#page-header&#x27;</span>).circleMagic(&#123;</span><br><span class="line">        radius: <span class="number">10</span>,</span><br><span class="line">        density: <span class="number">.2</span>,</span><br><span class="line">        color: <span class="string">&#x27;rgba(255,255,255,.4)&#x27;</span>,</span><br><span class="line">        clearOffset: <span class="number">0.99</span></span><br><span class="line">    &#125;);</span><br><span class="line">&#125;! <span class="function"><span class="keyword">function</span>(<span class="params">p</span>) </span>&#123;</span><br><span class="line">    p.fn.circleMagic = <span class="function"><span class="keyword">function</span>(<span class="params">t</span>) </span>&#123;</span><br><span class="line">        <span class="keyword">var</span> o, a, n, r, e = !<span class="number">0</span>,</span><br><span class="line">            i = [],</span><br><span class="line">            d = p.extend(&#123; <span class="attr">color</span>: <span class="string">&quot;rgba(255,0,0,.5)&quot;</span>, <span class="attr">radius</span>: <span class="number">10</span>, <span class="attr">density</span>: <span class="number">.3</span>, <span class="attr">clearOffset</span>: <span class="number">.2</span> &#125;, t),</span><br><span class="line">            l = <span class="built_in">this</span>[<span class="number">0</span>];</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">function</span> <span class="title">c</span>(<span class="params"></span>) </span>&#123; e = !(<span class="built_in">document</span>.body.scrollTop &gt; a) &#125;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">function</span> <span class="title">s</span>(<span class="params"></span>) </span>&#123; o = l.clientWidth, a = l.clientHeight, l.height = a + <span class="string">&quot;px&quot;</span>, n.width = o, n.height = a &#125;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">function</span> <span class="title">h</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">            <span class="keyword">if</span> (e)</span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">var</span> t <span class="keyword">in</span> r.clearRect(<span class="number">0</span>, <span class="number">0</span>, o, a), i) i[t].draw();</span><br><span class="line">            requestAnimationFrame(h)</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">            <span class="keyword">var</span> t = <span class="built_in">this</span>;</span><br><span class="line"></span><br><span class="line">            <span class="function"><span class="keyword">function</span> <span class="title">e</span>(<span class="params"></span>) </span>&#123; t.pos.x = <span class="built_in">Math</span>.random() * o, t.pos.y = a + <span class="number">100</span> * <span class="built_in">Math</span>.random(), t.alpha = <span class="number">.1</span> + <span class="built_in">Math</span>.random() * d.clearOffset, t.scale = <span class="number">.1</span> + <span class="number">.3</span> * <span class="built_in">Math</span>.random(), t.speed = <span class="built_in">Math</span>.random(), <span class="string">&quot;random&quot;</span> === d.color ? t.color = <span class="string">&quot;rgba(&quot;</span> + <span class="built_in">Math</span>.floor(<span class="number">255</span> * <span class="built_in">Math</span>.random()) + <span class="string">&quot;, &quot;</span> + <span class="built_in">Math</span>.floor(<span class="number">0</span> * <span class="built_in">Math</span>.random()) + <span class="string">&quot;, &quot;</span> + <span class="built_in">Math</span>.floor(<span class="number">0</span> * <span class="built_in">Math</span>.random()) + <span class="string">&quot;, &quot;</span> + <span class="built_in">Math</span>.random().toPrecision(<span class="number">2</span>) + <span class="string">&quot;)&quot;</span> : t.color = d.color &#125;</span><br><span class="line">            t.pos = &#123;&#125;, e(), <span class="built_in">this</span>.draw = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123; t.alpha &lt;= <span class="number">0</span> &amp;&amp; e(), t.pos.y -= t.speed, t.alpha -= <span class="number">5e-4</span>, r.beginPath(), r.arc(t.pos.x, t.pos.y, t.scale * d.radius, <span class="number">0</span>, <span class="number">2</span> * <span class="built_in">Math</span>.PI, !<span class="number">1</span>), r.fillStyle = t.color, r.fill(), r.closePath() &#125;</span><br><span class="line">        &#125;! <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">            o = l.offsetWidth, a = l.offsetHeight,</span><br><span class="line">                <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">                    <span class="keyword">var</span> t = <span class="built_in">document</span>.createElement(<span class="string">&quot;canvas&quot;</span>);</span><br><span class="line">                    t.id = <span class="string">&quot;canvas&quot;</span>, t.style.top = <span class="number">0</span>, t.style.zIndex = <span class="number">0</span>, t.style.position = <span class="string">&quot;absolute&quot;</span>, l.appendChild(t), t.parentElement.style.overflow = <span class="string">&quot;hidden&quot;</span></span><br><span class="line">                &#125;(), (n = <span class="built_in">document</span>.getElementById(<span class="string">&quot;canvas&quot;</span>)).width = o, n.height = a, r = n.getContext(<span class="string">&quot;2d&quot;</span>);</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">var</span> t = <span class="number">0</span>; t &lt; o * d.density; t++) &#123;</span><br><span class="line">                <span class="keyword">var</span> e = <span class="keyword">new</span> f;</span><br><span class="line">                i.push(e)</span><br><span class="line">            &#125;</span><br><span class="line">            h()</span><br><span class="line">        &#125;(), <span class="built_in">window</span>.addEventListener(<span class="string">&quot;scroll&quot;</span>, c, !<span class="number">1</span>), <span class="built_in">window</span>.addEventListener(<span class="string">&quot;resize&quot;</span>, s, !<span class="number">1</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;(jQuery);</span><br><span class="line"></span><br><span class="line"><span class="comment">// 调用气泡方法</span></span><br><span class="line">qipao();</span><br><span class="line"></span><br></pre></td></tr></table></figure><h2 id="波浪特效"><a href="#波浪特效" class="headerlink" title="波浪特效"></a>波浪特效</h2><p><img src= "/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/bolang.jpg" alt="波浪"></p><p><strong><em>找到<code>index.styl</code>文件粘贴进去</em></strong>（<code>z-index</code>看自己喜好调整）<em>（要确定被引用）</em> ↓</p><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">.hans-container</span><br><span class="line">  <span class="attribute">position</span>: fixed;</span><br><span class="line">  <span class="attribute">bottom</span>: <span class="number">0px</span>;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">120px</span>;</span><br><span class="line">  <span class="attribute">z-index</span>: -<span class="number">1</span></span><br></pre></td></tr></table></figure><p>把这段粘贴到主题配置文件<code>bottom:</code>选项里面去  ↓</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;hans-bolang&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://api.vvhan.com/api/bolang&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure><h2 id="透明特效"><a href="#透明特效" class="headerlink" title="透明特效"></a>透明特效</h2><h3 id="首页部分"><a href="#首页部分" class="headerlink" title="首页部分"></a>首页部分</h3><p>把横幅图片<code>top_img</code>与背景图<code>background</code>设置成一样的  ↓</p><p><img src= "/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/touming2.jpg" alt="透明2"></p><h3 id="页脚部分"><a href="#页脚部分" class="headerlink" title="页脚部分"></a>页脚部分</h3><p>在<code>footer.styl</code>（位置直接搜索）里的<code>#footer</code>里加一句话  ↓</p><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">background</span>: transparent !important;</span><br></pre></td></tr></table></figure><p><img src= "/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/touming1.jpg" alt="透明1"></p><h3 id="其他页面头部"><a href="#其他页面头部" class="headerlink" title="其他页面头部"></a>其他页面头部</h3><p>首先在主题配置文件里全部把这些页面的图片值改为<code>false</code></p><p>如：</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">tag_img:</span> <span class="literal">false</span></span><br></pre></td></tr></table></figure><p>然后在<code>head.styl</code>里把</p><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">background-color</span>: <span class="variable">$light</span>-blue</span><br></pre></td></tr></table></figure><p>注释掉</p><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// background-color: $light-blue</span></span><br></pre></td></tr></table></figure><p><strong><em>夜间模式可能不太行</em></strong></p><p><img src= "/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/touming.jpg" alt="透明"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> butterfly </tag>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>JsDelivr图床</title>
+      <link href="/p/c4933820/"/>
+      <url>/p/c4933820/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>先说一下：</p><p><code>JsDelivr</code>是<code>GitHub</code>的CDN</p><p>直接访问即可。</p><h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><h2 id="GitHub"><a href="#GitHub" class="headerlink" title="GitHub"></a>GitHub</h2><p>新建一个库，放图片。</p><p>（细说略。。）</p><h2 id="PicGo"><a href="#PicGo" class="headerlink" title="PicGo"></a>PicGo</h2><p>下载不说了。</p><p>默认的不好用。</p><p>用插件<code>githubPlus</code></p><h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><table><thead><tr><th>项目</th><th>描述</th></tr></thead><tbody><tr><td>repo</td><td>你的库名：<code>用户名/库名</code></td></tr><tr><td>branch</td><td>直接填：<code>master</code></td></tr><tr><td>token</td><td>Github申请token(后面讲)</td></tr><tr><td>path</td><td>库内路径(选)：<code>img/</code></td></tr><tr><td>customUrl</td><td>使用JsDerlivr：<code>https://cdn.jsdelivr.net/gh/用户名/库名</code></td></tr><tr><td>origin</td><td>选<code>github</code></td></tr></tbody></table><h3 id="GitHub-Token"><a href="#GitHub-Token" class="headerlink" title="GitHub Token"></a>GitHub Token</h3><p><a href="https://github.com/settings/apps">GitHub申请Token</a><img src= "/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/jsdelivr1.jpg"></p><p><img src= "/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/jsdelivr2.jpg"></p><div class="note warning">            <p><strong>注意：</strong> Token妥善保管，且只显示一次。</p>          </div><h1 id="上传"><a href="#上传" class="headerlink" title="上传"></a>上传</h1><p><img src= "/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/jsdelivr3.jpg"></p><div class="note info">            <p>如果出错，改个名字，重试。</p>          </div><h1 id="视频版"><a href="#视频版" class="headerlink" title="视频版"></a>视频版</h1><div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe src="//player.bilibili.com/player.html?aid=414284918&bvid=BV14V411U7Uo&cid=225060470&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; Left: 0; top: 0;" ></iframe></div>]]></content>
+      
+      
+      <categories>
+          
+          <category> 教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> 教程 </tag>
+            
+            <tag> cdn </tag>
+            
+            <tag> github </tag>
+            
+            <tag> jsdelivr </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hexo博客相册</title>
+      <link href="/p/c6ed254e/"/>
+      <url>/p/c6ed254e/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="使用1"><a href="#使用1" class="headerlink" title="使用1"></a>使用1</h1><p>直接使用：</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;gallery-group-main&quot;</span>&gt;</span></span><br><span class="line">&#123;% galleryGroup name description link img-url %&#125;</span><br><span class="line">&#123;% galleryGroup name description link img-url %&#125;</span><br><span class="line">&#123;% galleryGroup name description link img-url %&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure><table><thead><tr><th>项</th><th>描述</th></tr></thead><tbody><tr><td>name</td><td>图库的名字</td></tr><tr><td>description</td><td>图库描述</td></tr><tr><td>link</td><td>连接到对应相册的地址</td></tr><tr><td>img-ur</td><td>图库封面的地址</td></tr></tbody></table><p><strong>比如</strong></p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">&quot;gallery-group-main&quot;</span>&gt;</span></span><br><span class="line">&#123;% galleryGroup &#x27;壁纸&#x27; &#x27;收藏的一些壁纸&#x27; &#x27;/Gallery/wallpaper&#x27; https://i.loli.net/2019/11/10/T7Mu8Aod3egmC4Q.png %&#125;</span><br><span class="line">&#123;% galleryGroup &#x27;漫威&#x27; &#x27;关于漫威的图片&#x27; &#x27;/Gallery/marvel&#x27; https://i.loli.net/2019/12/25/8t97aVlp4hgyBGu.jpg %&#125;</span><br><span class="line">&#123;% galleryGroup &#x27;OH MY GIRL&#x27; &#x27;关于OH MY GIRL的图片&#x27; &#x27;/Gallery/ohmygirl&#x27; https://i.loli.net/2019/12/25/hOqbQ3BIwa6KWpo.jpg %&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure><p><strong><em>示例</em></strong></p><p><img src= "/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/xiangce.jpg" alt="示例"></p><h1 id="使用2"><a href="#使用2" class="headerlink" title="使用2"></a>使用2</h1><p>相册页：</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% gallery %&#125;</span><br><span class="line">markdown 图片格式</span><br><span class="line">&#123;% endgallery %&#125;</span><br></pre></td></tr></table></figure><p>比如：</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&#123;% gallery %&#125;</span><br><span class="line">![](https://i.loli.net/2019/12/25/Fze9jchtnyJXMHN.jpg)</span><br><span class="line">![](https://i.loli.net/2019/12/25/ryLVePaqkYm4TEK.jpg)</span><br><span class="line">![](https://i.loli.net/2019/12/25/gEy5Zc1Ai6VuO4N.jpg)</span><br><span class="line">![](https://i.loli.net/2019/12/25/d6QHbytlSYO4FBG.jpg)</span><br><span class="line">![](https://i.loli.net/2019/12/25/6nepIJ1xTgufatZ.jpg)</span><br><span class="line">![](https://i.loli.net/2019/12/25/E7Jvr4eIPwUNmzq.jpg)</span><br><span class="line">![](https://i.loli.net/2019/12/25/mh19anwBSWIkGlH.jpg)</span><br><span class="line">![](https://i.loli.net/2019/12/25/2tu9JC8ewpBFagv.jpg)</span><br><span class="line">&#123;% endgallery %&#125;</span><br></pre></td></tr></table></figure><div class="note info">            <p>长度会自动调整</p>          </div>]]></content>
+      
+      
+      <categories>
+          
+          <category> 教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> butterfly </tag>
+            
+            <tag> 教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hexo博客添加CNZZ统计</title>
+      <link href="/p/157d2c24/"/>
+      <url>/p/157d2c24/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="注册"><a href="#注册" class="headerlink" title="注册"></a>注册</h1><p>略。。</p><h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><h2 id="获取"><a href="#获取" class="headerlink" title="获取"></a>获取</h2><p>获取代码：</p><p><img src= "/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/youmeng1.jpg" alt="获取代码"></p><p>选择你要的。</p><p>我选择<code>横排数据显示</code></p><h2 id="安装-1"><a href="#安装-1" class="headerlink" title="安装"></a>安装</h2><p>打开文件<code>\themes\butterfly\layout\includes\footer.pug</code></p><p><code>pug</code>文件要更改格式</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span>&gt;</span><span class="javascript"><span class="built_in">document</span>.write(xxxxxxx);</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">script(type&#x3D;&quot;text&#x2F;javascript&quot;) document.write(xxxxxxx);</span><br></pre></td></tr></table></figure><p>注意<code>document</code>前面有空格</p><h1 id="完成"><a href="#完成" class="headerlink" title="完成"></a>完成</h1><p>刷新本地服务网页，可以看到。</p><p><img src= "/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/youmengdemo.jpg"></p><div class="note warning">            <p><strong>注意：</strong>可能会被广告拦截！</p>          </div> ]]></content>
+      
+      
+      <categories>
+          
+          <category> 教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> butterfly </tag>
+            
+            <tag> 教程 </tag>
+            
+            <tag> cnzz </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>github.io无法访问解决办法</title>
+      <link href="/p/befe379d/"/>
+      <url>/p/befe379d/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h1><p>之前一直用的自动，有问题。我们接下来都换成<code>阿里DNS</code></p><p><a href="https://www.alidns.com/">阿里DNS</a></p><h2 id="一键设置"><a href="#一键设置" class="headerlink" title="一键设置"></a>一键设置</h2><p>来源阿里DNS官网</p><p><a href="https://www.alidns.com/setup/?spm=a2chw.13814944.0.0.783a17605rWcc3#windows">阿里DNS | 设置</a></p><p><a href="https://www.alidns.com/public/soft/AliDNS.exe?spm=a2chw.13814944.0.0.395f1760vtb5sz&file=AliDNS.exe"><img src= "/img/loading.gif" data-lazy-src="https://www.alidns.com/public/img/windows-setup.png" alt="一键设置"></a></p><h2 id="打开"><a href="#打开" class="headerlink" title="打开"></a>打开</h2><p>打开<code>控制面板-&gt; 网络和 Internet -&gt;网络和共享中心 -&gt; 以太网 -&gt;属性</code></p><h2 id="更改IPV4"><a href="#更改IPV4" class="headerlink" title="更改IPV4"></a>更改IPV4</h2><p><img src= "/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/Snipaste_2020-08-12_18-20-28.jpg"></p><h2 id="更改IPV6"><a href="#更改IPV6" class="headerlink" title="更改IPV6"></a>更改IPV6</h2><p><img src= "/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/Snipaste_2020-08-12_18-21-06.jpg"></p><h2 id="生效"><a href="#生效" class="headerlink" title="生效"></a>生效</h2><p>清除DNS缓存</p><p>打开<code>powershell</code>或者<code>CMD</code>或者其他终端，输入命令</p><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ipconfig /flushdns</span><br></pre></td></tr></table></figure><h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>这应该是DNS污染造成的。</p><p><code>TMD用的114也不行，垃圾</code></p><p>换用阿里就OK了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+            <tag> github </tag>
+            
+            <tag> github page </tag>
+            
+            <tag> DNS </tag>
+            
+            <tag> 阿里 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hexo博客添加看板娘(二)</title>
+      <link href="/p/6f023c87/"/>
+      <url>/p/6f023c87/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p><img src= "/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/live2d1.jpg"></p><p><a href="https://github.com/stevenjoezhang/live2d-widget"><img src= "/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/githubck.png"></a></p><p><a href="https://github.com/stevenjoezhang/live2d-widget/blob/master/README.md"><img src= "/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/readwo.png"></a></p><div class="note success">            <p>此版本有交互界面！</p>          </div><h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><p>在主题配置文件<code>_config.yml</code>里</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">inject:</span></span><br><span class="line">  <span class="attr">head:</span></span><br></pre></td></tr></table></figure><p>添加</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure><p>效果</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">inject:</span></span><br><span class="line">  <span class="attr">head:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">&lt;script</span> <span class="string">src=&quot;https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget@latest/autoload.js&quot;&gt;&lt;/script&gt;</span></span><br></pre></td></tr></table></figure><h1 id="完成"><a href="#完成" class="headerlink" title="完成"></a>完成</h1><p>就这么简单，🆗了</p><p>我个人觉得配上<code>思源宋体</code>非常好看，耐看</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> 教程 </tag>
+            
+            <tag> 看板娘 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>VSCode插件—CloudMusic</title>
+      <link href="/p/e0f27af4/"/>
+      <url>/p/e0f27af4/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p>这是一款傻瓜式的VSC网抑云在线插件。</p><p><a href="https://marketplace.visualstudio.com/items?itemName=yxl.cloudmusic&ssr=false#overview"><img src= "/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/cloudmusic.jpg"></a></p><p>本插件具有以下特点：</p><ul><li>简单：开箱即用，无需安装、修改任何文件</li><li>快速：使用本机模块，资源占用低，速度快</li><li>强大：借助网页 API，能实现所有常用功能</li></ul><p>已实现的功能：</p><ul><li>每日签到</li><li>歌曲播放，收藏，喜欢</li><li>听歌打卡</li><li>心动模式</li><li>私人 FM</li><li>歌词显示</li><li>搜索（热搜/单曲/专辑/歌手…）</li><li>缓存管理</li><li>可选无损音质</li><li>媒体控制支持</li><li>更多功能等待发现</li></ul><h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p><a href="https://marketplace.visualstudio.com/items?itemName=yxl.cloudmusic&ssr=false#overview">点击这里直接访问插件商店网页版本</a></p><p><a href="vscode:extension/yxl.cloudmusic">直接点击这里安装</a></p><p><a href="https://github.com/YXL76/cloudmusic-vscode"><img src= "/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/githubck.png" alt="Github仓库"></a></p><h1 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h1><p><img src= "/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/cloudmusic2.jpg"></p><p><img src= "/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/cloudmusic3.jpg"></p><h2 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h2><ul><li><code>cloudmusic.account.autoCheck</code>: 登录后自动签到</li><li><code>cloudmusic.cache.size</code>: 缓存大小限制</li><li><code>cloudmusic.music.quality</code>: 音质选择</li></ul><h2 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h2><ul><li><code>Cloudmusic: Sign in</code>: 登录</li><li><code>Cloudmusic: Sign out</code> :登出</li><li><code>Cloudmusic: Daily check</code>: 每日签到</li><li><code>Cloudmusic: Toggle button</code>: 显示/隐藏按钮</li></ul><h2 id="已知问题"><a href="#已知问题" class="headerlink" title="已知问题"></a>已知问题</h2><ul><li>对于使用代理软件的用户，如果播放出现网络错误，请设置<code>http.proxy</code>（不是<code>cloudmusic.music.proxy</code>）</li></ul><h1 id="发行说明"><a href="#发行说明" class="headerlink" title="发行说明"></a>发行说明</h1><p><a href="https://github.com/YXL76/cloudmusic-vscode/blob/master/CHANGELOG.md">发行说明</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 网易云 </tag>
+            
+            <tag> VSCode </tag>
+            
+            <tag> 插件 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hexo博客添加看板娘(一)</title>
+      <link href="/p/842862a5/"/>
+      <url>/p/842862a5/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="准备"><a href="#准备" class="headerlink" title="准备"></a>准备</h1><p>本文使用 <a href="https://github.com/EYHN/hexo-helper-live2d">hexo-helper-live2d</a> 来构建看板娘，Hexo主题为<code>Butterfly</code>。</p><div class="note warning">            <p>此版本没有交互界面！！</p>          </div><h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p>使用<code>npm</code>安装，<code>node.js</code>要有哟！</p><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -<span class="literal">-save</span> hexo<span class="literal">-helper</span><span class="literal">-live2d</span></span><br></pre></td></tr></table></figure><h1 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h1><h2 id="基本配置"><a href="#基本配置" class="headerlink" title="基本配置"></a>基本配置</h2><p>把这段配置塞进根目录下的<code>_config.yml</code>中</p><div class="note info">            <p>如果后续完成后没有效果，可以放在主题配置文件里试试</p>          </div><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">live2d:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">scriptFrom:</span> <span class="string">local</span></span><br><span class="line">  <span class="attr">pluginRootPath:</span> <span class="string">live2dw/</span></span><br><span class="line">  <span class="attr">pluginJsPath:</span> <span class="string">lib/</span></span><br><span class="line">  <span class="attr">pluginModelPath:</span> <span class="string">assets/</span></span><br><span class="line">  <span class="attr">tagMode:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">debug:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">model:</span></span><br><span class="line">    <span class="attr">use:</span> <span class="string">live2d-widget-model-wanko</span></span><br><span class="line">  <span class="attr">display:</span></span><br><span class="line">    <span class="attr">position:</span> <span class="string">right</span></span><br><span class="line">    <span class="attr">width:</span> <span class="number">150</span></span><br><span class="line">    <span class="attr">height:</span> <span class="number">300</span></span><br><span class="line">  <span class="attr">mobile:</span></span><br><span class="line">    <span class="attr">show:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">react:</span></span><br><span class="line">    <span class="attr">opacity:</span> <span class="number">0.7</span></span><br></pre></td></tr></table></figure><p>更多详细的设置，请参考<a href="https://github.com/EYHN/hexo-helper-live2d/blob/master/README.zh-CN.md#%E9%85%8D%E7%BD%AE">官方中文文档</a> ，这里只是简单的放进去。。</p><h2 id="模型配置"><a href="#模型配置" class="headerlink" title="模型配置"></a>模型配置</h2><div class="note info">            <p>这里直接使用简单的<code>npm</code>配置</p>          </div><h3 id="模型列表"><a href="#模型列表" class="headerlink" title="模型列表"></a>模型列表</h3><ul><li><code>live2d-widget-model-chitose</code></li><li><code>live2d-widget-model-epsilon2_1</code></li><li><code>live2d-widget-model-gf</code></li><li><code>live2d-widget-model-haru/01</code> (use <code>npm install --save live2d-widget-model-haru</code>)</li><li><code>live2d-widget-model-haru/02</code> (use <code>npm install --save live2d-widget-model-haru</code>)</li><li><code>live2d-widget-model-haruto</code></li><li><code>live2d-widget-model-hibiki</code></li><li><code>live2d-widget-model-hijiki</code></li><li><code>live2d-widget-model-izumi</code></li><li><code>live2d-widget-model-koharu</code></li><li><code>live2d-widget-model-miku</code></li><li><code>live2d-widget-model-ni-j</code></li><li><code>live2d-widget-model-nico</code></li><li><code>live2d-widget-model-nietzsche</code></li><li><code>live2d-widget-model-nipsilon</code></li><li><code>live2d-widget-model-nito</code></li><li><code>live2d-widget-model-shizuku</code></li><li><code>live2d-widget-model-tororo</code></li><li><code>live2d-widget-model-tsumiki</code></li><li><code>live2d-widget-model-unitychan</code></li><li><code>live2d-widget-model-wanko</code></li><li><code>live2d-widget-model-z16</code></li></ul><h3 id="模型预览"><a href="#模型预览" class="headerlink" title="模型预览"></a>模型预览</h3><p>这里可以直接参看CSDN里的一篇文章，里面有截图。</p><p><a href="https://blog.csdn.net/wang_123_zy/article/details/87181892">Hexo添加Live2D看板娘+模型预览_执念-CSDN博客_hexo live2d</a></p><p>这里我的博客就是用了<code>live2d-widget-model-wanko</code>这个模型。</p><h3 id="模型安装"><a href="#模型安装" class="headerlink" title="模型安装"></a>模型安装</h3><h4 id="安装-1"><a href="#安装-1" class="headerlink" title="安装"></a>安装</h4><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install &#123;模型的包名&#125;</span><br></pre></td></tr></table></figure><p><em>把大括号扔掉哈！</em></p><h4 id="载入"><a href="#载入" class="headerlink" title="载入"></a>载入</h4><p>把你安装的模型的包名，比如<code>live2d-widget-model-hijiki</code></p><p>，填入前面塞进<code>_config.yml</code>的配置中的<code>   use:</code></p><h1 id="完成"><a href="#完成" class="headerlink" title="完成"></a>完成</h1><div class="note success">            <p>重启<code>hexo server</code>，查看效果</p>          </div>]]></content>
+      
+      
+      <categories>
+          
+          <category> 教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> 教程 </tag>
+            
+            <tag> 看板娘 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>网站改造升级完成</title>
+      <link href="/p/39386d76/"/>
+      <url>/p/39386d76/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="网站性质"><a href="#网站性质" class="headerlink" title="网站性质"></a>网站性质</h1><ol><li>网站的性质由原来的<code>主页</code>变更为<code>博客</code></li></ol><h1 id="网站面貌"><a href="#网站面貌" class="headerlink" title="网站面貌"></a>网站面貌</h1><h2 id="原面貌："><a href="#原面貌：" class="headerlink" title="原面貌："></a>原面貌：</h2><p><img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2020/08/02/b7pgLnl2DWwhPYK.jpg" alt="原貌"></p><h2 id="现面貌："><a href="#现面貌：" class="headerlink" title="现面貌："></a>现面貌：</h2><p><img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2020/08/02/OgH3854ezScL19k.jpg" alt="现貌"></p><p><u>美美哒！！</u></p><h1 id="托管仓库"><a href="#托管仓库" class="headerlink" title="托管仓库"></a>托管仓库</h1><p>托管服务商依然是<code>Github</code>，但是地址有所变更：</p><h2 id="旧地址"><a href="#旧地址" class="headerlink" title="旧地址"></a>旧地址</h2><p><a href="https://github.com/wr20060926/wr20060926.github.io">github.com/wr20060926/wr20060926.github.io</a></p><h2 id="新地址"><a href="#新地址" class="headerlink" title="新地址"></a>新地址</h2><p><a href="https://github.com/wr20060926/wrblog.github.io">github.com/wr20060926/wrblog.github.io</a></p><h1 id="内容变更"><a href="#内容变更" class="headerlink" title="内容变更"></a>内容变更</h1><ol><li>基本的一些工具没有移动，但是可能会有一些问题，我会慢慢修复。</li><li>以前在论坛提供的下载链接依旧服务。</li><li>有关工具链接，可以到<a href="https://wr0926.ml/link/">链接</a>去查看，我会慢慢更新。</li></ol><h1 id="老版本国内镜像备份"><a href="#老版本国内镜像备份" class="headerlink" title="老版本国内镜像备份"></a>老版本国内镜像备份</h1><p><a href="https://wr20060926.gitee.io/wr20060926.github.io">wr20060926.gitee.io/wr20060926.github.io</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 说明 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 说明 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>抖音视频无水印下载（手动）</title>
+      <link href="/p/ec32f1a/"/>
+      <url>/p/ec32f1a/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="教程"><a href="#教程" class="headerlink" title="教程"></a>教程</h1><h2 id="打开"><a href="#打开" class="headerlink" title="打开"></a>打开</h2><p>首先，得到了一个一个分享的链接：<code>https://v.douyin.com/WuRMPV/</code></p><p>在浏览器中打开：</p><p><img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2020/08/02/6qMm19svYwrRB4H.jpg" alt="打开界面"></p><p>然后按下<code>F12</code>或者右键，打开开发工具：</p><p><img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2020/08/02/JGoOlABXcaHrFSj.jpg" alt="打开开发工具"></p><h2 id="抓链接"><a href="#抓链接" class="headerlink" title="抓链接"></a>抓链接</h2><p><img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2020/08/02/GseMaW5N8jzg4cu.jpg" alt="抓链接"></p><p>如图，找到链接。</p><p>复制。</p><h2 id="去水印"><a href="#去水印" class="headerlink" title="去水印"></a>去水印</h2><p>复制这段链接，粘贴到新的窗口。<strong>但是不要直接访问</strong></p><p>同样打开<code>开发工具</code>，找到类似<img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2020/08/02/Wu8TVivDj5ZOkfU.png" alt="设备工具">这样的图标，点击，打开了<code>设备工具</code>，选择一个手机型号，如：<img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2020/08/02/FYH31rDLqJiuyQp.jpg" alt="手机型号"></p><p>找到地址栏，去除链接<code>/playwm/</code>中的<code>wm</code>,               <img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2020/08/02/qB3U7LmcYKR2oWh.jpg" alt="去除wm"></p><p>访问，即可下载视频。</p><div class="note warning">            <p>必须要调制手机UI！</p>          </div>]]></content>
+      
+      
+      <categories>
+          
+          <category> 教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+            <tag> 解析 </tag>
+            
+            <tag> 视频 </tag>
+            
+            <tag> 下载 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>全等三角形笔记</title>
+      <link href="/p/13ea88dc/"/>
+      <url>/p/13ea88dc/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="全等三角形笔记"><a href="#全等三角形笔记" class="headerlink" title="全等三角形笔记"></a>全等三角形笔记</h1><p>这个我搞了很久，一两天吧，用<code>OneNote</code>做的，导出成<code>PDF</code>文件</p><p>总结了暑假所学的大部分全等三角形知识，除了母子三角形。</p><p><img src= "/img/loading.gif" data-lazy-src="https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/quandengsanjiaoxing1.jpg" alt="笔记截图"></p><h1 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h1><p><a href="http://pan-yz.chaoxing.com/share/info/97c00ab117e9c4c9">点击访问超星网盘（需登录）</a></p><p><a href="https://wayne0926.lanzous.com/iCN69f7krji">点击访问蓝奏云（无需登录）</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 分享 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 笔记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>在线听写助手</title>
+      <link href="/p/b204d02b/"/>
+      <url>/p/b204d02b/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h2 id="历程"><a href="#历程" class="headerlink" title="历程"></a>历程</h2><p>原始的素材来源于网络，现在已经找不到具体的出处。</p><p>我在无意间发现了这个工具，什么都好，就是很丑，各种按钮都是HTML里自带的样式，于是我在闲下来的时候就对他进行了修改。</p><p>工具经历了许多版本，这也是我的第一个高度开发的工具，从中我也学到了很多，也明白了很多道理。你所直接访问的版本其实我已经没有怎么维护了，我的开发方向转移到了<code>BootStrap</code>框架构造上。</p><p>但是现在仍然没有开发完成，许多问题有待解决。相比成品，访问速度快，界面简洁，手机体验佳。</p><p><img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2020/08/01/zEpAWfvtX6iVsRS.jpg" alt="普通版本"></p><p><img src= "/img/loading.gif" data-lazy-src="https://i.loli.net/2020/08/01/X5TIzgYyH8ux21W.png" alt="新开发版本"></p><h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><h3 id="普通版本-：点击访问"><a href="#普通版本-：点击访问" class="headerlink" title="普通版本 ：点击访问"></a>普通版本 ：<a href="https://wr0926.ml/tx/">点击访问</a></h3><h3 id="新开发版本：点击访问"><a href="#新开发版本：点击访问" class="headerlink" title="新开发版本：点击访问"></a>新开发版本：<a href="https://wr0926.ml/tx/new2/">点击访问</a></h3>]]></content>
+      
+      
+      <categories>
+          
+          <category> 工具 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 工具 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
