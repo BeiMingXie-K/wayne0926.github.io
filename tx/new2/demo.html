@@ -468,7 +468,22 @@ document.addEventListener('DOMContentLoaded', panguFn)</script><script src="/js/
       false && mermaid.init()
     })
   }
-}</script><script>function loadValine () {
+}</script><script>var requestSetting = function (from,set) {
+  var from = from
+  var setting = set.split(',').filter(function(item){
+  return from.indexOf(item) > -1
+  });
+  setting = setting.length == 0 ? from :setting;
+  return setting
+}
+
+var guestInfo = requestSetting(['nick','mail','link'],'nick,mail,link')
+var requiredFields = requestSetting(['nick','mail','link'],'nick,mail')
+let friends = ''.split(',')
+let master = '8ce0d0211103ef983be11b6d4f0517ed'.split(',')
+let tagMeta = '博主,小伙伴,访客'.split(',')
+
+function loadValine () {
   function initValine () {
     window.valine = new Valine({
       el: '#vcomment',
@@ -485,6 +500,10 @@ document.addEventListener('DOMContentLoaded', panguFn)</script><script src="/js/
       emojiMaps: "",
       enableQQ: true,
       path: window.location.pathname,
+      master: master,
+      friends: friends,
+      tagMeta: tagMeta,
+      metaPlaceholder: {}
     });
     if ('nick,mail') { valine.config.requiredFields= 'nick,mail'.split(',') }
   }
