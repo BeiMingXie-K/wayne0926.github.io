@@ -2768,11 +2768,12 @@ blockquote footer cite:before {
 #footer-wrap {
   position: relative;
   padding: 2rem 1rem;
-  color: var(--light-grey);
+  color: var(--light-black);
   text-align: center;
 }
 #footer-wrap a {
-  color: var(--light-grey);
+  color: var(--light-black);
+  font-weight: bold;
 }
 #footer-wrap a:hover {
   text-decoration: underline;
@@ -5764,17 +5765,27 @@ blockquote.pullquote.right {
     max-height: 75vh !important;
   }
 }
-#toggle-sidebar {
-  color: #49b1f5 !important;
-}
 .hans-container {
   position: fixed;
   bottom: 0px;
   width: 100%;
   height: 120px;
   z-index: -1;
-/* 滚动条 */
 }
+/* 鼠标指针 */
+body {
+  cursor: url("https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/default.cur"),;
+default
+}
+a,
+img {
+  cursor: url("https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/pointer.cur"),;
+default
+}
+#toggle-sidebar {
+  color: #49b1f5 !important;
+}
+/* 滚动条 */
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
@@ -5794,4 +5805,244 @@ blockquote.pullquote.right {
 }
 ::-webkit-scrollbar-corner {
   background-color: transparent;
+}
+/* note渐变 */
+.tip {
+  position: relative;
+  color: #fff;
+  background: #20a0ff;
+  background: -webkit-gradient(linear, left top, right top, from(#20a0ff), to(#20b8ff));
+  background: -webkit-gradient(linear, left top, right top, from(#20a0ff), to(#20b8ff));
+  background: -webkit-gradient(linear, left top, right top, from(#20a0ff), to(#20b8ff));
+  background: -webkit-gradient(linear, left top, right top, from(#20a0ff), to(#20b8ff));
+  background: -webkit-gradient(linear, left top, right top, from(#20a0ff), to(#20b8ff));
+  background: -webkit--webkit-linear-gradient(left, #20a0ff, #20b8ff);
+  background: -webkit--moz-linear-gradient(left, #20a0ff, #20b8ff);
+  background: -webkit--o-linear-gradient(left, #20a0ff, #20b8ff);
+  background: -webkit--ms-linear-gradient(left, #20a0ff, #20b8ff);
+  background: -webkit-linear-gradient(to right, #20a0ff, #20b8ff);
+  background: -webkit-linear-gradient(0deg, #20a0ff, #20b8ff);
+  background: -moz-linear-gradient(0deg, #20a0ff, #20b8ff);
+  background: -o-linear-gradient(0deg, #20a0ff, #20b8ff);
+  background: -ms-linear-gradient(0deg, #20a0ff, #20b8ff);
+  background: linear-gradient(90deg, #20a0ff, #20b8ff);
+  padding: 6px 20px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 3px 5px rgba(32,160,255,0.5);
+  -webkit-box-shadow: 0 3px 5px rgba(32,160,255,0.5);
+  box-shadow: 0 3px 5px rgba(32,160,255,0.5);
+  margin-bottom: 20px;
+}
+.tip p {
+  margin: 5px 0 !important;
+}
+.tip:before {
+  background: #20a0ff;
+  background: -webkit-gradient(linear, left bottom, left top, from(#0092ff), to(#20b8ff));
+  background: -webkit-gradient(linear, left bottom, left top, from(#0092ff), to(#20b8ff));
+  background: -webkit-gradient(linear, left bottom, left top, from(#0092ff), to(#20b8ff));
+  background: -webkit-gradient(linear, left bottom, left top, from(#0092ff), to(#20b8ff));
+  background: -webkit-gradient(linear, left bottom, left top, from(#0092ff), to(#20b8ff));
+  background: -webkit--webkit-linear-gradient(bottom, #0092ff, #20b8ff);
+  background: -webkit--moz-linear-gradient(bottom, #0092ff, #20b8ff);
+  background: -webkit--o-linear-gradient(bottom, #0092ff, #20b8ff);
+  background: -webkit--ms-linear-gradient(bottom, #0092ff, #20b8ff);
+  background: -webkit-linear-gradient(to top, #0092ff, #20b8ff);
+  background: -webkit-linear-gradient(90deg, #0092ff, #20b8ff);
+  background: -moz-linear-gradient(90deg, #0092ff, #20b8ff);
+  background: -o-linear-gradient(90deg, #0092ff, #20b8ff);
+  background: -ms-linear-gradient(90deg, #0092ff, #20b8ff);
+  background: linear-gradient(0deg, #0092ff, #20b8ff);
+  border-radius: 50%;
+  color: #fff;
+  content: "\f129";
+  font-size: 12px;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  line-height: 24.5px;
+  left: -12px;
+  top: -12px;
+  -webkit-box-shadow: 0 0 0 2.5px #fff;
+  -webkit-box-shadow: 0 0 0 2.5px #fff;
+  box-shadow: 0 0 0 2.5px #fff;
+  font-weight: 600;
+  font-family: "Font Awesome 5 Free";
+  text-align: center;
+}
+.btn,
+.getit a {
+  position: relative;
+}
+.well .tip:before {
+  -webkit-box-shadow: 0 0 0 2.5px #f7f8f9;
+  -webkit-box-shadow: 0 0 0 2.5px #f7f8f9;
+  box-shadow: 0 0 0 2.5px #f7f8f9;
+}
+.tip ol {
+  margin: 0;
+}
+.tip.success {
+  background: #61be33;
+  background: -webkit-gradient(linear, left top, right top, from(#61be33), to(#8fce44));
+  background: -webkit-gradient(linear, left top, right top, from(#61be33), to(#8fce44));
+  background: -webkit-gradient(linear, left top, right top, from(#61be33), to(#8fce44));
+  background: -webkit-gradient(linear, left top, right top, from(#61be33), to(#8fce44));
+  background: -webkit-gradient(linear, left top, right top, from(#61be33), to(#8fce44));
+  background: -webkit--webkit-linear-gradient(left, #61be33, #8fce44);
+  background: -webkit--moz-linear-gradient(left, #61be33, #8fce44);
+  background: -webkit--o-linear-gradient(left, #61be33, #8fce44);
+  background: -webkit--ms-linear-gradient(left, #61be33, #8fce44);
+  background: -webkit-linear-gradient(to right, #61be33, #8fce44);
+  background: -webkit-linear-gradient(0deg, #61be33, #8fce44);
+  background: -moz-linear-gradient(0deg, #61be33, #8fce44);
+  background: -o-linear-gradient(0deg, #61be33, #8fce44);
+  background: -ms-linear-gradient(0deg, #61be33, #8fce44);
+  background: linear-gradient(90deg, #61be33, #8fce44);
+  text-shadow: 0 -1px #61be33;
+  -webkit-box-shadow: 0 3px 5px rgba(104,195,59,0.5);
+  -webkit-box-shadow: 0 3px 5px rgba(104,195,59,0.5);
+  box-shadow: 0 3px 5px rgba(104,195,59,0.5);
+}
+.tip.success:before {
+  background: -webkit-gradient(linear, left bottom, left top, from(#52bb1d), to(#95d34b));
+  background: -webkit-gradient(linear, left bottom, left top, from(#52bb1d), to(#95d34b));
+  background: -webkit-gradient(linear, left bottom, left top, from(#52bb1d), to(#95d34b));
+  background: -webkit-gradient(linear, left bottom, left top, from(#52bb1d), to(#95d34b));
+  background: -webkit-gradient(linear, left bottom, left top, from(#52bb1d), to(#95d34b));
+  background: -webkit--webkit-linear-gradient(bottom, #52bb1d, #95d34b);
+  background: -webkit--moz-linear-gradient(bottom, #52bb1d, #95d34b);
+  background: -webkit--o-linear-gradient(bottom, #52bb1d, #95d34b);
+  background: -webkit--ms-linear-gradient(bottom, #52bb1d, #95d34b);
+  background: -webkit-linear-gradient(to top, #52bb1d, #95d34b);
+  background: -webkit-linear-gradient(90deg, #52bb1d, #95d34b);
+  background: -moz-linear-gradient(90deg, #52bb1d, #95d34b);
+  background: -o-linear-gradient(90deg, #52bb1d, #95d34b);
+  background: -ms-linear-gradient(90deg, #52bb1d, #95d34b);
+  background: linear-gradient(0deg, #52bb1d, #95d34b);
+  content: "\f00c";
+  text-shadow: 0 -1px #61be33;
+}
+.tip.warning {
+  background: #ff953f;
+  background: -webkit-gradient(linear, left top, right top, from(#ff953f), to(#ffb449));
+  background: -webkit-gradient(linear, left top, right top, from(#ff953f), to(#ffb449));
+  background: -webkit-gradient(linear, left top, right top, from(#ff953f), to(#ffb449));
+  background: -webkit-gradient(linear, left top, right top, from(#ff953f), to(#ffb449));
+  background: -webkit-gradient(linear, left top, right top, from(#ff953f), to(#ffb449));
+  background: -webkit--webkit-linear-gradient(left, #ff953f, #ffb449);
+  background: -webkit--moz-linear-gradient(left, #ff953f, #ffb449);
+  background: -webkit--o-linear-gradient(left, #ff953f, #ffb449);
+  background: -webkit--ms-linear-gradient(left, #ff953f, #ffb449);
+  background: -webkit-linear-gradient(to right, #ff953f, #ffb449);
+  background: -webkit-linear-gradient(0deg, #ff953f, #ffb449);
+  background: -moz-linear-gradient(0deg, #ff953f, #ffb449);
+  background: -o-linear-gradient(0deg, #ff953f, #ffb449);
+  background: -ms-linear-gradient(0deg, #ff953f, #ffb449);
+  background: linear-gradient(90deg, #ff953f, #ffb449);
+  text-shadow: 0 -1px #ff953f;
+  -webkit-box-shadow: 0 3px 5px rgba(255,154,73,0.5);
+  -webkit-box-shadow: 0 3px 5px rgba(255,154,73,0.5);
+  box-shadow: 0 3px 5px rgba(255,154,73,0.5);
+}
+.tip.warning:before {
+  background: -webkit-gradient(linear, left bottom, left top, from(#ff8f35), to(#ffc149));
+  background: -webkit-gradient(linear, left bottom, left top, from(#ff8f35), to(#ffc149));
+  background: -webkit-gradient(linear, left bottom, left top, from(#ff8f35), to(#ffc149));
+  background: -webkit-gradient(linear, left bottom, left top, from(#ff8f35), to(#ffc149));
+  background: -webkit-gradient(linear, left bottom, left top, from(#ff8f35), to(#ffc149));
+  background: -webkit--webkit-linear-gradient(bottom, #ff8f35, #ffc149);
+  background: -webkit--moz-linear-gradient(bottom, #ff8f35, #ffc149);
+  background: -webkit--o-linear-gradient(bottom, #ff8f35, #ffc149);
+  background: -webkit--ms-linear-gradient(bottom, #ff8f35, #ffc149);
+  background: -webkit-linear-gradient(to top, #ff8f35, #ffc149);
+  background: -webkit-linear-gradient(90deg, #ff8f35, #ffc149);
+  background: -moz-linear-gradient(90deg, #ff8f35, #ffc149);
+  background: -o-linear-gradient(90deg, #ff8f35, #ffc149);
+  background: -ms-linear-gradient(90deg, #ff8f35, #ffc149);
+  background: linear-gradient(0deg, #ff8f35, #ffc149);
+  content: "\f12a";
+  text-shadow: 0 -1px #ff953f;
+}
+.tip.error {
+  background: #ff4949;
+  background: -webkit-gradient(linear, left top, right top, from(#ff4949), to(#ff7849));
+  background: -webkit-gradient(linear, left top, right top, from(#ff4949), to(#ff7849));
+  background: -webkit-gradient(linear, left top, right top, from(#ff4949), to(#ff7849));
+  background: -webkit-gradient(linear, left top, right top, from(#ff4949), to(#ff7849));
+  background: -webkit-gradient(linear, left top, right top, from(#ff4949), to(#ff7849));
+  background: -webkit--webkit-linear-gradient(left, #ff4949, #ff7849);
+  background: -webkit--moz-linear-gradient(left, #ff4949, #ff7849);
+  background: -webkit--o-linear-gradient(left, #ff4949, #ff7849);
+  background: -webkit--ms-linear-gradient(left, #ff4949, #ff7849);
+  background: -webkit-linear-gradient(to right, #ff4949, #ff7849);
+  background: -webkit-linear-gradient(0deg, #ff4949, #ff7849);
+  background: -moz-linear-gradient(0deg, #ff4949, #ff7849);
+  background: -o-linear-gradient(0deg, #ff4949, #ff7849);
+  background: -ms-linear-gradient(0deg, #ff4949, #ff7849);
+  background: linear-gradient(90deg, #ff4949, #ff7849);
+  text-shadow: 0 -1px #ff4949;
+  -webkit-box-shadow: 0 3px 5px rgba(255,73,73,0.5);
+  -webkit-box-shadow: 0 3px 5px rgba(255,73,73,0.5);
+  box-shadow: 0 3px 5px rgba(255,73,73,0.5);
+}
+.tip.error:before {
+  background: -webkit-gradient(linear, left bottom, left top, from(#ff3838), to(#ff7849));
+  background: -webkit-gradient(linear, left bottom, left top, from(#ff3838), to(#ff7849));
+  background: -webkit-gradient(linear, left bottom, left top, from(#ff3838), to(#ff7849));
+  background: -webkit-gradient(linear, left bottom, left top, from(#ff3838), to(#ff7849));
+  background: -webkit-gradient(linear, left bottom, left top, from(#ff3838), to(#ff7849));
+  background: -webkit--webkit-linear-gradient(bottom, #ff3838, #ff7849);
+  background: -webkit--moz-linear-gradient(bottom, #ff3838, #ff7849);
+  background: -webkit--o-linear-gradient(bottom, #ff3838, #ff7849);
+  background: -webkit--ms-linear-gradient(bottom, #ff3838, #ff7849);
+  background: -webkit-linear-gradient(to top, #ff3838, #ff7849);
+  background: -webkit-linear-gradient(90deg, #ff3838, #ff7849);
+  background: -moz-linear-gradient(90deg, #ff3838, #ff7849);
+  background: -o-linear-gradient(90deg, #ff3838, #ff7849);
+  background: -ms-linear-gradient(90deg, #ff3838, #ff7849);
+  background: linear-gradient(0deg, #ff3838, #ff7849);
+  content: "\f00d";
+  text-shadow: 0 -1px #ff4949;
+}
+/*夜间适配*/
+[data-theme="dark"] .tip {
+  filter: brightness(0.7);
+}
+/* snote夜间模式 */
+[data-theme="dark"] .tip {
+  color: #4c4948;
+}
+.icon-bilibili-fill:before {
+  content: "\e600";
+/* 修改颜色 */
+/* 修改大小 */
+  font-size: 24px;
+}
+.icon-zhihu-circle:before {
+  content: "\e600";
+/* 修改颜色 */
+/* 修改大小 */
+  font-size: 23px;
+}
+.icon-wangyiyunyinyuemusic1193417easyiconnet:before {
+  content: "\e600";
+/* 修改颜色 */
+/* 修改大小 */
+  font-size: 23px;
+}
+.icon-gitee-fill-round:before {
+  content: "\e600";
+/* 修改颜色 */
+/* 修改大小 */
+  font-size: 23px;
+}
+#body-wrap > #content-inner {
+  opacity: 0.96;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=96)";
+  filter: alpha(opacity=96);
+}
+/* 文章背景 */
+.layout_post>#post {
+  background: rgba(255,255,255,0.97);
 }

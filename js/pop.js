@@ -51,3 +51,7 @@ var full_page = document.getElementsByClassName("full_page");
 if (full_page.length != 0) {
     full_page[0].style.background = "transparent";
 }
+
+// // yu
+// var xiaokang = new xkTool(param1, param2);
+// xiaokang.footFish();
