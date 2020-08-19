@@ -2799,6 +2799,7 @@ blockquote footer cite:before {
   -o-transition: all 0.5s;
   -ms-transition: all 0.5s;
   transition: all 0.5s;
+  height: 200px;
 }
 #page-header.full_page {
   height: 100vh;
@@ -5774,13 +5775,11 @@ blockquote.pullquote.right {
 }
 /* 鼠标指针 */
 body {
-  cursor: url("https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/default.cur"),;
-default
+  cursor: url("https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/default.cur"), default;
 }
 a,
 img {
-  cursor: url("https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/pointer.cur"),;
-default
+  cursor: url("https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/pointer.cur"), default;
 }
 #toggle-sidebar {
   color: #49b1f5 !important;
