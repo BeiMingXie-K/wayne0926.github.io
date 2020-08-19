@@ -6041,6 +6041,13 @@ img {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=96)";
   filter: alpha(opacity=96);
 }
+.wv-lt-col-5 {
+  display: none !important;
+}
+#weather-v2-plugin-standard {
+  height: auto !important;
+  width: auto !important;
+}
 /* 文章背景 */
 .layout_post>#post {
   background: rgba(255,255,255,0.97);
