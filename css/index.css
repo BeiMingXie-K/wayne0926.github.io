@@ -6048,6 +6048,10 @@ img {
   height: auto !important;
   width: auto !important;
 }
+#artitalk_main {
+  font-size: 17px !important;
+  font-family: 'PingFang SC', 'Microsoft YaHei', 'SimSun', 'Arial', sans-serif !important;
+}
 /* 文章背景 */
 .layout_post>#post {
   background: rgba(255,255,255,0.97);
