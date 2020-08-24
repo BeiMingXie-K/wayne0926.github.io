@@ -302,7 +302,7 @@ h6 {
   position: relative;
   margin: 1rem 0 0.7rem;
   color: var(--text-highlight-color);
-  font-weight: bold;
+  font-weight: 600;
 }
 h1 code,
 h2 code,
@@ -2920,6 +2920,7 @@ blockquote footer cite:before {
 #page-header.post-bg #post-info #post-title {
   margin-bottom: 0.4rem;
   font-size: 1.5rem;
+  font-weight: 700;
 }
 @media screen and (max-width: 768px) {
   #page-header.post-bg #post-info #post-title {
@@ -3375,7 +3376,7 @@ _:future,
 #recent-posts > .recent-post-item >.recent-post-info > .article-title {
   margin-bottom: 0.3rem;
   color: var(--text-highlight-color);
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   line-height: 1.4;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
@@ -3383,6 +3384,7 @@ _:future,
   -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   -webkit-line-clamp: 2;
+  font-weight: 700;
 }
 #recent-posts > .recent-post-item >.recent-post-info > .article-title:hover {
   color: #49b1f5;
@@ -3854,6 +3856,7 @@ _:future,
   -o-transition: all 0.2s ease-out;
   -ms-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
+  font-weight: 700 !important;
 }
 #article-container.post-content h1:before,
 #article-container.post-content h2:before,
@@ -5766,14 +5769,6 @@ blockquote.pullquote.right {
     max-height: 75vh !important;
   }
 }
-.hans-container {
-  position: fixed;
-  bottom: 0px;
-  width: 100%;
-  height: 120px;
-  z-index: -1;
-}
-/* 鼠标指针 */
 body {
   cursor: url("https://cdn.jsdelivr.net/gh/sviptzk/HexoStaticFile@latest/Hexo/img/default.cur"), default;
 }
@@ -6053,6 +6048,3 @@ img {
   font-family: 'PingFang SC', 'Microsoft YaHei', 'SimSun', 'Arial', sans-serif !important;
 }
 /* 文章背景 */
-.layout_post>#post {
-  background: rgba(255,255,255,0.97);
-}
