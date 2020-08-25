@@ -121,6 +121,13 @@
   </url>
   
   <url>
+    <loc>https://www.wr0926.ml/img/index.html</loc>
+    
+    <lastmod>2020-08-24</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.wr0926.ml/link/index.html</loc>
     
     <lastmod>2020-08-24</lastmod>
@@ -149,20 +156,6 @@
   </url>
   
   <url>
-    <loc>https://www.wr0926.ml/img/index.html</loc>
-    
-    <lastmod>2020-08-24</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.wr0926.ml/tags/index.html</loc>
-    
-    <lastmod>2020-08-24</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://www.wr0926.ml/mp3/index.html</loc>
     
     <lastmod>2020-08-24</lastmod>
@@ -178,6 +171,13 @@
   
   <url>
     <loc>https://www.wr0926.ml/suijimima/index.html</loc>
+    
+    <lastmod>2020-08-24</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.wr0926.ml/tags/index.html</loc>
     
     <lastmod>2020-08-24</lastmod>
     
@@ -219,14 +219,14 @@
   </url>
   
   <url>
-    <loc>https://www.wr0926.ml/tx/liuyan/index.html</loc>
+    <loc>https://www.wr0926.ml/tx/new/index.html</loc>
     
     <lastmod>2020-08-24</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.wr0926.ml/tx/new/index.html</loc>
+    <loc>https://www.wr0926.ml/tx/liuyan/index.html</loc>
     
     <lastmod>2020-08-24</lastmod>
     
@@ -247,14 +247,14 @@
   </url>
   
   <url>
-    <loc>https://www.wr0926.ml/tx/new2/index.html</loc>
+    <loc>https://www.wr0926.ml/tx/new2/test.html</loc>
     
     <lastmod>2020-08-24</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.wr0926.ml/tx/new2/test.html</loc>
+    <loc>https://www.wr0926.ml/tx/new2/index.html</loc>
     
     <lastmod>2020-08-24</lastmod>
     
@@ -396,20 +396,6 @@
   </url>
   
   <url>
-    <loc>https://www.wr0926.ml/tags/cdn/</loc>
-    <lastmod>2020-08-25</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.wr0926.ml/tags/jsdelivr/</loc>
-    <lastmod>2020-08-25</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.wr0926.ml/tags/%E7%BD%91%E6%98%93%E4%BA%91/</loc>
     <lastmod>2020-08-25</lastmod>
     <changefreq>daily</changefreq>
@@ -431,6 +417,27 @@
   </url>
   
   <url>
+    <loc>https://www.wr0926.ml/tags/cdn/</loc>
+    <lastmod>2020-08-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wr0926.ml/tags/jsdelivr/</loc>
+    <lastmod>2020-08-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.wr0926.ml/tags/%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2020-08-25</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.wr0926.ml/tags/github-page/</loc>
     <lastmod>2020-08-25</lastmod>
     <changefreq>daily</changefreq>
@@ -446,13 +453,6 @@
   
   <url>
     <loc>https://www.wr0926.ml/tags/%E9%98%BF%E9%87%8C/</loc>
-    <lastmod>2020-08-25</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.wr0926.ml/tags/%E7%AC%94%E8%AE%B0/</loc>
     <lastmod>2020-08-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
