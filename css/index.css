@@ -3133,6 +3133,11 @@ _:future,
 }
 #nav .menus_items .menus_item .menus_item_child li:hover {
   background: var(--text-bg-hover);
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
 }
 #nav .menus_items .menus_item .menus_item_child li a {
   display: inline-block;
@@ -3326,7 +3331,7 @@ _:future,
   transform: scale(1.1);
 }
 #recent-posts > .recent-post-item .left_radius {
-  border-radius: 25px 0 0 8px;
+  border-radius: 25px 0 0 25px;
 }
 #recent-posts > .recent-post-item .right_radius {
   -webkit-box-ordinal-group: 2;
@@ -3730,6 +3735,7 @@ _:future,
   overflow: hidden;
   margin-top: 1rem;
   width: 100%;
+  border-radius: 5px;
 }
 #pagination .pagination {
   text-align: center;
@@ -4264,6 +4270,7 @@ img {
   height: 200px;
   background: #000;
   vertical-align: bottom;
+  border-radius: 5px;
 }
 .relatedPosts .relatedPosts_item:hover .relatedPosts_cover {
   opacity: 0.8;
@@ -5821,7 +5828,7 @@ img {
   background: -ms-linear-gradient(0deg, #20a0ff, #20b8ff);
   background: linear-gradient(90deg, #20a0ff, #20b8ff);
   padding: 6px 20px;
-  border-radius: 10px;
+  border-radius: 20px;
   -webkit-box-shadow: 0 3px 5px rgba(32,160,255,0.5);
   -webkit-box-shadow: 0 3px 5px rgba(32,160,255,0.5);
   box-shadow: 0 3px 5px rgba(32,160,255,0.5);
@@ -6043,6 +6050,11 @@ img {
   height: auto !important;
   width: auto !important;
 }
+.wv-top-button {
+  border-radius: 25px !important;
+  background: var(--btn-bg) !important;
+  color: #fff !important;
+}
 #artitalk_main {
   font-size: 17px !important;
   font-family: 'PingFang SC', 'Microsoft YaHei', 'SimSun', 'Arial', sans-serif !important;
@@ -6050,10 +6062,33 @@ img {
 /* 文章背景 */
 #card-info-btn {
   border-radius: 25px;
+  overflow: hidden;
 }
 #card-info-btn:before {
   border-radius: 25px;
 }
 #vcomment .vbtn {
   border-radius: 25px !important;
+}
+.flink#article-container .flink-list > .flink-list-item:before {
+  border-radius: 25px;
+}
+#operare_artitalk .at_button,
+#artitalk_main .at_button {
+  border-radius: 25px !important;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  transition: all 0.3s;
+}
+#operare_artitalk .c2 {
+  border-radius: 25px !important;
+}
+#operare_artitalk .shuoshuo_input_log {
+  border-radius: 25px !important;
+}
+#article-container .btn-beautify.outline {
+  border-radius: 25px;
+  overflow: hidden;
 }
