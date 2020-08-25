@@ -285,7 +285,7 @@ input::placeholder {
   z-index: -999;
   width: 100%;
   height: 100%;
-  background: url("https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/dbd.jpg");
+  background: url("https://cdn.jsdelivr.net/gh/wayne0926/myphoto/img/bd.jpg");
   background-attachment: local;
   background-position: center;
   -webkit-background-size: cover;
@@ -2046,7 +2046,7 @@ blockquote footer cite:before {
   align-items: center;
   margin: 0 1rem;
   height: 18rem;
-  border-radius: 8px;
+  border-radius: 25px;
   background: var(--card-bg);
   -webkit-box-shadow: 0 4px 8px 6px rgba(7,17,27,0.06);
   box-shadow: 0 4px 8px 6px rgba(7,17,27,0.06);
@@ -2152,7 +2152,7 @@ blockquote footer cite:before {
 }
 #aside_content .card-widget {
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: 25px;
   background: var(--card-bg);
   -webkit-box-shadow: 0 4px 8px 6px rgba(7,17,27,0.06);
   box-shadow: 0 4px 8px 6px rgba(7,17,27,0.06);
@@ -2592,7 +2592,7 @@ blockquote footer cite:before {
   margin: 0.1rem auto 0;
   padding: 0.2rem 0.8rem;
   width: max-content;
-  border-radius: 8px;
+  border-radius: 25px;
   background: #f6f8fa;
 }
 #post-comment .comment-head .comment-switch .first-comment {
@@ -2674,7 +2674,7 @@ blockquote footer cite:before {
   margin: 15px 7px;
   width: calc(100% / 3 - 15px);
   height: 90px;
-  border-radius: 8px;
+  border-radius: 25px;
   line-height: 17px;
   -webkit-transform: translateZ(0);
 }
@@ -2802,12 +2802,12 @@ blockquote footer cite:before {
   height: 200px;
 }
 #page-header.full_page {
-  height: 100vh;
+  height: 450px;
   background-attachment: fixed;
 }
 #page-header.full_page #site-info {
   position: absolute;
-  top: 38%;
+  top: 25%;
   padding: 0 0.5rem;
   width: 100%;
 }
@@ -3304,7 +3304,7 @@ _:future,
   align-items: center;
   padding: 0;
   height: 280px;
-  border-radius: 8px;
+  border-radius: 25px;
   background: var(--card-bg);
   -webkit-box-shadow: 0 4px 8px 6px rgba(7,17,27,0.06);
   box-shadow: 0 4px 8px 6px rgba(7,17,27,0.06);
@@ -3326,7 +3326,7 @@ _:future,
   transform: scale(1.1);
 }
 #recent-posts > .recent-post-item .left_radius {
-  border-radius: 8px 0 0 8px;
+  border-radius: 25px 0 0 8px;
 }
 #recent-posts > .recent-post-item .right_radius {
   -webkit-box-ordinal-group: 2;
@@ -3335,7 +3335,7 @@ _:future,
   -ms-flex-order: 2;
   -webkit-order: 2;
   order: 2;
-  border-radius: 0 8px 8px 0;
+  border-radius: 0 25px 25px 0;
 }
 #recent-posts > .recent-post-item .post_cover {
   overflow: hidden;
@@ -3453,7 +3453,7 @@ _:future,
 .layout_post > #post,
 .layout_page > div:first-child:not(.recent-posts) {
   padding: 50px 40px;
-  border-radius: 8px;
+  border-radius: 25px;
   background: var(--card-bg);
   -webkit-box-shadow: 0 4px 8px 6px rgba(7,17,27,0.06);
   box-shadow: 0 4px 8px 6px rgba(7,17,27,0.06);
@@ -3694,7 +3694,7 @@ _:future,
     order: 1 !important;
     width: 100%;
     height: 230px;
-    border-radius: 8px 8px 0 0;
+    border-radius: 25px 25px 0 0;
   }
   #recent-posts .recent-post-item .recent-post-info {
     -webkit-box-ordinal-group: 2 !important;
@@ -4774,7 +4774,7 @@ figure.gallery-group {
   margin: 0.3rem 0.2rem;
   width: calc(50% - 0.4rem);
   height: 250px;
-  border-radius: 8px;
+  border-radius: 25px;
   background: #000;
   -webkit-transform: translate3d(0, 0, 0);
 }
@@ -6048,3 +6048,12 @@ img {
   font-family: 'PingFang SC', 'Microsoft YaHei', 'SimSun', 'Arial', sans-serif !important;
 }
 /* 文章背景 */
+#card-info-btn {
+  border-radius: 25px;
+}
+#card-info-btn:before {
+  border-radius: 25px;
+}
+#vcomment .vbtn {
+  border-radius: 25px !important;
+}
