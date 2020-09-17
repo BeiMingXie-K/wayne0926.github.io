@@ -3413,6 +3413,7 @@ blockquote footer cite:before {
 #page-header.post-bg #post-info #post-title {
   margin-bottom: 0.4rem;
   font-size: 2.15em;
+  font-weight: 700;
 }
 @media screen and (max-width: 768px) {
   #page-header.post-bg #post-info #post-title {
@@ -3423,6 +3424,7 @@ blockquote footer cite:before {
   color: var(--white);
   line-height: 1.5;
   -webkit-line-clamp: 3;
+  font-weight: 700;
 }
 #page-header.post-bg #post-info #post-meta {
   color: var(--light-grey);
